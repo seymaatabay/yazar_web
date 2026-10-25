@@ -1,0 +1,225 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --ana-renk: #234638;
+    --vurgu-renk: #8B2635;
+    --baglanti-renk: #8B2635;
+    --zemin: #F7F2E8;
+    --metin: #292929;
+    --kenar: #E2D8CA;
+    --kart-zemin: #FFFFFF;
+}
+
+/* ---------- Genel görünüm ---------- */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--metin);
+    background-color: var(--zemin);
+    margin: 0;
+}
+
+main {
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: var(--kart-zemin);
+    border-radius: 12px;
+}
+
+h1, h2, h3 {
+    color: var(--ana-renk);
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+}
+
+a {
+    color: var(--baglanti-renk);
+}
+
+a:hover {
+    color: var(--ana-renk);
+}
+
+.vurgu {
+    color: var(--vurgu-renk);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 16px;
+}
+
+/* ---------- Üst bölüm ve menü ---------- */
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px;
+    background-color: var(--ana-renk);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: white;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+nav a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+nav a:hover,
+nav a.aktif {
+    background-color: var(--vurgu-renk);
+    color: white;
+}
+/* ---------- Ana sayfa ve popüler kitaplar ---------- */
+.ana-icerik {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.yazar-bolumu {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--zemin);
+    border: 1px solid var(--kenar);
+    border-radius: 10px;
+}
+
+.yazar-foto img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 260px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.yazar-bolumu h2 {
+    margin-bottom: 8px;
+}
+
+.yazar-bolumu p {
+    font-size: 0.9rem;
+}
+
+.populer-kitaplar {
+    flex: 1;
+    min-width: 0;
+}
+
+.populer-kitaplar h2 {
+    flex: 1.5;
+    min-width: 0;
+}
+
+.kitaplar {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.kitap {
+    flex: 1 1 140px;
+    max-width: 200px;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--kart-zemin);
+    border: 1px solid var(--kenar);
+    border-radius: 10px;
+}
+
+.kitap img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.kitap h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.tum-kitaplar {
+    text-align: right;
+    margin-top: 16px;
+}
+
+.kesfet {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: var(--ana-renk);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.kesfet:hover {
+    background-color: var(--vurgu-renk);
+    color: white;
+}
+/* ---------- Biyografi sayfası ---------- */
+body:has(.biyografi) {
+    text-align: center;
+}
+
+.biyografi {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.biyografi img {
+    display: block;
+    width: 260px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+.biyografi p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
