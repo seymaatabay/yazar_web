@@ -1,24 +1,16 @@
+
+/* Genel ayarlar */
+
 * {
     box-sizing: border-box;
 }
 
-:root {
-    --ana-renk: #234638;
-    --vurgu-renk: #8B2635;
-    --baglanti-renk: #8B2635;
-    --zemin: #F7F2E8;
-    --metin: #292929;
-    --kenar: #E2D8CA;
-    --kart-zemin: #FFFFFF;
-}
-
-/* ---------- Genel görünüm ---------- */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--metin);
-    background-color: var(--zemin);
+    color: #292929;
+    background-color: #F7F2E8;
     margin: 0;
 }
 
@@ -26,12 +18,12 @@ main {
     max-width: 960px;
     margin: 24px auto;
     padding: 24px;
-    background-color: var(--kart-zemin);
+    background-color: white;
     border-radius: 12px;
 }
 
 h1, h2, h3 {
-    color: var(--ana-renk);
+    color: #234638;
 }
 
 h2 {
@@ -43,15 +35,15 @@ h3 {
 }
 
 a {
-    color: var(--baglanti-renk);
+    color: #8B2635;
 }
 
 a:hover {
-    color: var(--ana-renk);
+    color: #234638;
 }
 
 .vurgu {
-    color: var(--vurgu-renk);
+    color: #8B2635;
     font-weight: bold;
 }
 
@@ -61,13 +53,15 @@ footer {
     padding: 16px;
 }
 
-/* ---------- Üst bölüm ve menü ---------- */
+
+/* Üst bölüm ve menü */
+
 header {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 12px 24px;
-    background-color: var(--ana-renk);
+    background-color: #234638;
 }
 
 header h1 {
@@ -91,15 +85,17 @@ nav a {
     border-radius: 6px;
     color: white;
     text-decoration: none;
-    transition: background-color 0.2s;
 }
 
 nav a:hover,
 nav a.aktif {
-    background-color: var(--vurgu-renk);
+    background-color: #8B2635;
     color: white;
 }
-/* ---------- Ana sayfa ve popüler kitaplar ---------- */
+
+
+/* Ana sayfa ve popüler kitaplar */
+
 .ana-icerik {
     display: flex;
     align-items: flex-start;
@@ -112,8 +108,8 @@ nav a.aktif {
     min-width: 0;
     padding: 20px;
     text-align: center;
-    background-color: var(--zemin);
-    border: 1px solid var(--kenar);
+    background-color: #F7F2E8;
+    border: 1px solid #E2D8CA;
     border-radius: 10px;
 }
 
@@ -140,11 +136,6 @@ nav a.aktif {
     min-width: 0;
 }
 
-.populer-kitaplar h2 {
-    flex: 1.5;
-    min-width: 0;
-}
-
 .kitaplar {
     display: flex;
     justify-content: center;
@@ -159,8 +150,8 @@ nav a.aktif {
     max-width: 200px;
     padding: 12px;
     text-align: center;
-    background-color: var(--kart-zemin);
-    border: 1px solid var(--kenar);
+    background-color: white;
+    border: 1px solid #E2D8CA;
     border-radius: 10px;
 }
 
@@ -186,18 +177,21 @@ nav a.aktif {
     display: inline-block;
     margin-top: 8px;
     padding: 8px 12px;
-    background-color: var(--ana-renk);
+    background-color: #234638;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .kesfet:hover {
-    background-color: var(--vurgu-renk);
+    background-color: #8B2635;
     color: white;
 }
-/* ---------- Biyografi sayfası ---------- */
-body:has(.biyografi) {
+
+
+/* Biyografi sayfası */
+
+.biyografi-sayfasi {
     text-align: center;
 }
 
@@ -225,7 +219,7 @@ body:has(.biyografi) {
 }
 
 .biyografi section h2 {
-    color: var(--vurgu-renk);
+    color: #8B2635;
     text-align: left;
 }
 
@@ -234,9 +228,11 @@ body:has(.biyografi) {
     line-height: 1.8;
     margin-bottom: 20px;
 }
-/* ---------- Kitaplık sayfası ---------- */
 
-main:has(.kitaplar2) {
+
+/* Kitaplık sayfası */
+
+.kitaplik {
     max-width: 1100px;
 }
 
@@ -248,17 +244,11 @@ main:has(.kitaplar2) {
 }
 
 .kitap-karti {
-    background-color: var(--zemin);
-    border: 1px solid var(--kenar);
+    background-color: #F7F2E8;
+    border: 1px solid #E2D8CA;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.kitap-karti:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
 .kitap-karti img {
@@ -270,13 +260,13 @@ main:has(.kitaplar2) {
 }
 
 .kitap-karti h2 {
-    color: var(--ana-renk);
+    color: #234638;
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
 .kitap-karti p {
-    color: var(--metin);
+    color: #292929;
     font-size: 0.9rem;
     line-height: 1.6;
 }
