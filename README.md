@@ -8,6 +8,6 @@ Kurulum ve Çalıştırma:
 
 1- Bu projenin dosyalarını bilgisayarına klonlayın veya indirin.
 
-2- Klasörü Visual Studio Code (VS Code) ile açın.
+2- Klasörü Visual Studio Code (VS Code) veya benzeri bir kod editörüyle açın.
 
-3- Live Server eklentisini kullanarak "index.html" dosyasını tarayıcınızda çalıştırın. 
+3- Live Server eklentisini kullanarak "index.html" dosyasını tarayıcınızda çalıştırın. Alternatif olarak dosyayı doğrudan tarayıcınızda da açabilirsiniz.
